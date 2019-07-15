@@ -4,7 +4,13 @@ mySampleString="This is a sample string which will be used to demonstrate the st
 
 #Substring,Slicing,Splitting and other functionalities
 print(mySampleString[2])
+print(mySampleString[-2])
 print(mySampleString[5:16])
+print(mySampleString[:])
+print(mySampleString[2:])
+print(mySampleString[:-1])
+#Reverse a String
+print(mySampleString[::-1])
 sampleStr=" Hello "
 print(sampleStr.strip())
 print(mySampleString.upper())
