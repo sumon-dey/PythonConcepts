@@ -12,6 +12,9 @@ print("**********************************************************")
 # Variables
 # In Python, there is no need for variable type declaration
 # Every Python variable is an object and a variable is created the moment we first assign a value to it.
+# A variable name must start with a letter or the underscore character.
+# It cannot start with a number and can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+# Python variables are case-sensitive
 myAge = 30
 myName = "Sam"
 myHeight = 1.72
