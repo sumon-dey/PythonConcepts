@@ -1,0 +1,22 @@
+
+1) Python is a popular, interpreted, dynamically-typed, high-level and general purpose programming language
+   created by Guido Van Rossum in 1991.
+
+2) It has efficient high-level data structures and its elegant syntax and dynamic typing make it an ideal scripting language
+   which can be used on multiple platforms (e.g. Windows, macOS, Linux, Raspberry Pi etc.).
+
+3) Python is most popular in the fields of:
+   Data Science and Machine Learning
+   Server-side Web Development
+   Software Development
+   Big Data
+   Mathematics and Statistics
+
+4) The number of lines in Python programming is comparatively less compared to some other popular programming languages.
+
+5) Python runs on an Interpreter system, meaning that the code can be executed as soon as it is written without actually
+   compiling. Hence, it is very useful for quick protoyping.
+
+6) Python can run in a procedural way, an object-oriented way and in a functional way.
+
+
