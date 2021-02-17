@@ -89,3 +89,72 @@ mixed_list = [charList, digitList]
 print(mixed_list)
 print(mixed_list[1][2])
 print("**********************************************************")
+
+# List Comprehensions
+# They provide a concise way to create lists and consist of brackets containing an expression followed by a for clause,
+# then zero or more for or if clauses. The result will be a new list resulting from evaluating the expression in the
+# context of the for and if clauses which follow it.
+newList = []
+for n in range(10):
+    newList.append(n ** 2)
+print(newList)
+newList = list(map(lambda i: i ** 2, range(10)))
+print(newList)
+newList = [i ** 2 for i in range(10)]
+print(newList)
+print("**********************************************************")
+
+# combines the elements of two lists if they are not equal
+combinedList = []
+for first in [4, 2, 5]:
+    for second in [5, 1, 4]:
+        if first != second:
+            combinedList.append((first, second))
+print(combinedList)
+combinedList = [(i, n) for i in [4, 2, 5] for n in [5, 1, 4] if i != n]
+print(combinedList)
+print("**********************************************************")
+
+# calling a method on each element.
+fresh_fruit = ['  mango', '  orange ', 'banana  ']
+clean_fresh_fruit = [fruit.strip() for fruit in fresh_fruit]
+print(clean_fresh_fruit)
+print("**********************************************************")
+
+# list of two tuples
+tuplesSample = [(i, i ** 2) for i in range(4)]
+print(tuplesSample)
+print("**********************************************************")
+
+# Flatten a list using a list comprehension with two 'for'.
+sampleList = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flattenedSampleList = [i for n in sampleList for i in n]
+print(flattenedSampleList)
+print("**********************************************************")
+
+# nested List Comprehension
+nestedListSample = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+
+# this will transpose rows and columns
+nestedListSample_transposed1 = [[row[i] for row in nestedListSample] for i in range(4)]
+print(nestedListSample_transposed1)
+print("**********************************************************")
+nestedListSample_transposed2 = []
+for i in range(4):
+    nestedListSample_transposed2.append([row[i] for row in nestedListSample])
+print(nestedListSample_transposed2)
+print("**********************************************************")
+nestedListSample_transposed3 = []
+for i in range(4):
+    transposed_row = []
+    for row in nestedListSample:
+        transposed_row.append(row[i])
+    nestedListSample_transposed3.append(transposed_row)
+print(nestedListSample_transposed3)
+print("**********************************************************")
+print(list(zip(*nestedListSample)))
+print("**********************************************************")
