@@ -104,7 +104,8 @@ newList = [i ** 2 for i in range(10)]
 print(newList)
 print("**********************************************************")
 
-# combines the elements of two lists if they are not equal
+# combines the elements of two lists if t
+# hey are not equal
 combinedList = []
 for first in [4, 2, 5]:
     for second in [5, 1, 4]:
