@@ -24,11 +24,18 @@ print(type(myName))
 print(type(myHeight))
 print("**********************************************************")
 
-# Type Casting
+# Type Casting (to specify a type to a variable using constructor functions)
 # Adding different data types will throw error
+# constructs Strings from other data types
 myAgeInString = str(myAge)
 myHeightInString = str(myHeight)
 print("My name is: " + myName + ", my age is: " + myAgeInString + " and my height is: " + myHeightInString)
+# constructs integers from other data types
+print(int("125"))
+print(int(3.2))
+# constructs float from other data types
+print(float("4.22"))
+print(float(22242))
 print("**********************************************************")
 
 # Numeric Types
