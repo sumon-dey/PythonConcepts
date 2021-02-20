@@ -7,8 +7,10 @@ personHeight = 1.82
 # if-elif-else
 if (personName == "Richard"):
     print("The person is Richard")
+# There can be zero or more than zero elif (short form for "else-if") parts in conjunction with the "if" clause
 elif (personName == "Sam"):
     print("The person is Sam")
+# The "else" part is optional
 else:
     print("The person is someone else!")
 print("**********************************************************")
