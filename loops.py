@@ -32,8 +32,8 @@ else:
 print("**********************************************************")
 
 # Nested for loops
-color_list = ['red', 'green', 'yellow']
-fruit_list = ['apple', 'banana', 'mango']
+color_list = ["red", "green", "yellow"]
+fruit_list = ["apple", "banana", "mango"]
 for x in fruit_list:
     for y in color_list:
         print(x + " is having color: " + y)
@@ -51,10 +51,31 @@ print(age)
 print("**********************************************************")
 
 # To loop over two or more sequences at the same time, the entries can be paired with the zip() function.
-questions = ['name', 'quest', 'favorite color']
-answers = ['lancelot', 'the holy grail', 'blue']
+questions = ["name", "quest", "favorite color"]
+answers = ["lancelot", "the holy grail", "blue"]
 combinations = []
 for question, answer in zip(questions, answers):
     combinations.append('What is your {0}?  It is {1}.'.format(question, answer))
 print(combinations)
+print("**********************************************************")
+
+# "break" statement
+# It helps to break out of the innermost enclosing "for" or "while" loop
+# In the below example, once the condition (=="yellow") is met, the control breaks and comes out of the "for" loop
+color_list = ["red", "green", "yellow", "blue", "orange", "black", "white"]
+for x in color_list:
+    if x == "yellow":
+        break
+    else:
+        print(x)
+print("**********************************************************")
+
+# "continue" statement
+# It helps to continue the looping/iteration in a "for" or "while" loop
+color_list = ["red", "green", "yellow", "blue", "orange", "black", "white"]
+for x in color_list:
+    if x == "yellow":
+        continue
+    else:
+        print(x)
 print("**********************************************************")
